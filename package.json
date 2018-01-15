@@ -4,10 +4,10 @@
   "description": "rpc between iframes and windows using postMessage with no serialization",
   "main": "index.js",
   "dependencies": {
-    "isarray": "~0.0.1"
+    "isarray": "~0.0.1",
+    "url-parse": "^1.2.0"
   },
   "devDependencies": {
-    "jsdom": "^11.5.1",
     "tape": "^3.0.0"
   },
   "scripts": {

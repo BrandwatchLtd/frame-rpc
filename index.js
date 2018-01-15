@@ -1,4 +1,5 @@
 var isarray = require('isarray');
+var urlParse = require('url-parse');
 var hasf = Object.prototype.hasOwnProperty;
 function has (obj, key) { return hasf.call(obj,key) }
 
@@ -16,9 +17,8 @@ function RPC (src, dst, origin, methods) {
         this.origin = '*';
     }
     else if (origin) {
-        var link = document.createElement('a')
-        link.setAttribute('href', origin);
-        this.origin = link.protocol + '//' + link.host;
+        var uorigin = urlParse(origin);
+        this.origin = uorigin.protocol + '//' + uorigin.host;
     }
 
     this._sequence = 0;

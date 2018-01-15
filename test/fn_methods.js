@@ -1,10 +1,6 @@
 var RPC = require('../');
 var test = require('tape');
-var url = require('url');
-var jsdom = require('jsdom');
 var EventEmitter = require('events').EventEmitter;
-
-document = (new jsdom.JSDOM()).window.document;
 
 test('fn methods', function (t) {
     t.plan(6);
