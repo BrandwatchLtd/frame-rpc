@@ -1,6 +1,6 @@
 {
   "name": "@brandwatch/frame-rpc",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "rpc between iframes and windows using postMessage with no serialization",
   "main": "index.js",
   "dependencies": {
